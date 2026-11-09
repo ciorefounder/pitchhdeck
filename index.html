@@ -257,6 +257,16 @@ html, body {
 }
 /* ── Override foot border on cover ──────────────────────────────────────── */
 #s1 .foot { border-top:none; }
+#s1 .s1-descriptor {
+  font-size:30px; font-weight:300; color:#444444;
+  margin-top:16px; line-height:1.3;
+}
+#s1 .s1-founder-info {
+  position:absolute; left:940px; bottom:80px;
+  width:800px; font-size:22px; font-weight:400;
+  color:#1A1A1A; font-family:'Nunito Sans',sans-serif;
+  z-index:4; line-height:1.4;
+}
 /* ── Mobile stacking ─────────────────────────────────────────────────────── */
 @media screen and (max-width:900px) {
   #s1 .s1-hero { width:100%; left:0; top:0; height:auto; }
@@ -276,6 +286,7 @@ html, body {
 <div class="s1-tagline">
   <p>A Better Smartphone, By<br>Design.</p>
 </div>
+<div class="s1-founder-info">Chrissy N. Gilmore | Founder &amp; CEO | founder@cioreofficial.com | <a href="https://cioreofficial.com" style="color:inherit;">cioreofficial.com</a></div>
 <!-- Lower rule: dark + chartreuse -->
 <div class="s1-rule"></div>
 <div class="foot" style="border-top:none;"><div class="foot-num-dk">1</div></div>
@@ -694,8 +705,8 @@ html, body {
 </div>
 <div class="circ c-som">
   <div class="c-tier">SOM</div>
-  <div class="c-val">$1.2M</div>
-  <div class="c-lbl">2,000 devices · 24 months</div>
+  <div class="c-val">$2.995M</div>
+  <div class="c-lbl">5,000 devices · 2027</div>
 </div>
 
 <!-- RIGHT PANEL -->
@@ -886,8 +897,8 @@ html, body {
   <div class="rollout-row">
 
     <div class="rs hl">
-      <div class="rs-stage">Stage 1</div>
-      <div class="rs-date">Dec 2026: Membership Kickoff</div>
+      <div class="rs-stage">December 2026: Membership Kickoff</div>
+      <div class="rs-date">Demand proof and waitlist activation</div>
       <div class="rs-focus">Demand proof and waitlist activation</div>
       <div class="rs-metrics">
         <div class="rs-metric"><strong>1,000</strong> Paying Members</div>
@@ -900,8 +911,8 @@ html, body {
     <div class="rs-arrow">&#8594;</div>
 
     <div class="rs hl">
-      <div class="rs-stage">Stage 2</div>
-      <div class="rs-date">Jan 2027: Commercial Device Launch</div>
+      <div class="rs-stage">Milestone 1 - January 2027: Founding Member Device Delivery</div>
+      <div class="rs-date">1,000 devices at $599 each, plus $29,000 membership</div>
       <div class="rs-focus">Initial device delivery and revenue ramp</div>
       <div class="rs-metrics">
         <div class="rs-metric"><strong>1,000</strong> Target Devices Delivered</div>
@@ -923,7 +934,7 @@ html, body {
         <th>Metric</th>
         <th>Dec 2026: Membership Kickoff</th>
         <th class="col-dk">Jan 2027: Device Launch</th>
-        <th class="col-lime">2027: Launch From Q2</th>
+        <th class="col-lime">Milestone 2 - Q2 2027: Public Launch</th>
         <th class="col-lime2">2028: Growth</th>
       </tr>
     </thead>
@@ -1029,7 +1040,7 @@ html, body {
   </div>
   <div class="tl-col">
     <div class="tl-stroke"></div>
-    <div class="tl-head">Full Launch</div>
+    <div class="tl-head">Public Launch (Q2 2027)</div>
     <div class="tl-body">Open public sales, targeting 5,000 devices in 2027.</div>
   </div>
 </div>
@@ -1223,7 +1234,7 @@ html, body {
       <div class="s8-copy">
         <div class="s8-fig">55 Kits</div>
         <div class="s8-head">Waitlist Converted to Revenue</div>
-        <div class="s8-desc">Limited cohort of waitlist members paid to receive our device prototype early, testing the shape and feel before launch. First proof of paid demand.</div>
+        <div class="s8-desc">55 waitlist members paid to receive our device prototype early, testing the shape and feel before launch. First proof of paid demand.</div>
       </div>
     </div>
 
@@ -2070,6 +2081,47 @@ html, body {
   line-height: 1.45;
 }
 
+/* ── Use-of-funds bar rows ── */
+#s10 .s10-uof-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 4px;
+}
+#s10 .s10-uof-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#s10 .s10-uof-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#s10 .s10-uof-name {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.01em;
+}
+#s10 .s10-uof-amt {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--lime);
+  letter-spacing: 0.02em;
+}
+#s10 .s10-uof-track {
+  height: 6px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 3px;
+  overflow: hidden;
+}
+#s10 .s10-uof-fill {
+  height: 100%;
+  background: var(--lime);
+  border-radius: 3px;
+}
+
 /* ── Footer note  y≈above .foot ── */
 #s10 .s10-foot-note {
   position: absolute;
@@ -2127,12 +2179,25 @@ html, body {
 <!-- SECTION 4: Rationale columns -->
 <div class="s10-s4">
   <div class="s10-rationale-col">
-    <div class="s10-col-label">Raise basis</div>
-    <div class="s10-col-text">Specialist staffing, prototype iterations and validation.</div>
+    <div class="s10-col-label">Use of funds — $1.5M</div>
+    <div class="s10-uof-rows">
+      <div class="s10-uof-item">
+        <div class="s10-uof-meta"><span class="s10-uof-name">Specialist execution</span><span class="s10-uof-amt">$675K · 45%</span></div>
+        <div class="s10-uof-track"><div class="s10-uof-fill" style="width:45%"></div></div>
+      </div>
+      <div class="s10-uof-item">
+        <div class="s10-uof-meta"><span class="s10-uof-name">Build &amp; validate</span><span class="s10-uof-amt">$525K · 35%</span></div>
+        <div class="s10-uof-track"><div class="s10-uof-fill" style="width:35%"></div></div>
+      </div>
+      <div class="s10-uof-item">
+        <div class="s10-uof-meta"><span class="s10-uof-name">Next stage prep</span><span class="s10-uof-amt">$300K · 20%</span></div>
+        <div class="s10-uof-track"><div class="s10-uof-fill" style="width:20%"></div></div>
+      </div>
+    </div>
   </div>
   <div class="s10-rationale-col">
     <div class="s10-col-label">Cap rationale</div>
-    <div class="s10-col-text">Proposed cap informed by market context, traction and execution risk.</div>
+    <div class="s10-col-text">The $8M post-money SAFE cap reflects pre-seed hardware valuations based on our current traction.</div>
   </div>
 </div>
 
@@ -2302,6 +2367,11 @@ html, body {
   font-size:18px; font-weight:300; color:rgba(255,255,255,0.38);
   line-height:1.4; text-align:center;
 }
+#s11 .s11-deck-note {
+  position:absolute; bottom:28px; left:0; right:0;
+  text-align:center; font-size:16px; font-weight:300;
+  color:rgba(255,255,255,0.35); font-family:'Nunito Sans',sans-serif;
+}
 </style>
 
 <!-- Background glows -->
@@ -2401,7 +2471,7 @@ html, body {
 </div>
 
 <!-- Update note -->
-<div class="s11-update">This pitch deck is updated weekly. Last updated October 19, 2026.</div>
+<div class="s11-update">This pitch deck is updated weekly. Last updated November 8, 2026.</div>
 
 <div class="foot foot-dark">
   <div class="foot-num">11</div>
