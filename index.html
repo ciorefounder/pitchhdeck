@@ -1074,7 +1074,7 @@ html, body {
 #s8 .s8-content {
   position: absolute;
   top: 218px;
-  bottom: 100px;
+  bottom: 70px;
   left: 100px;
   right: 100px;
   display: grid;
@@ -1082,11 +1082,11 @@ html, body {
   column-gap: 60px;
 }
 
-/* ── Left column: 3 equal rows ── */
+/* ── Left column: 4 equal rows ── */
 #s8 .s8-left {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 30px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 16px;
   height: 100%;
   overflow: hidden;
 }
@@ -1095,7 +1095,7 @@ html, body {
 #s8 .s8-right {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  row-gap: 24px;
+  row-gap: 16px;
   height: 100%;
   overflow: hidden;
 }
@@ -1139,9 +1139,9 @@ html, body {
   min-width: 0;
 }
 
-/* ── Traction figure (left column 01-03) ── */
+/* ── Traction figure (left column 01-04) ── */
 #s8 .s8-fig {
-  font-size: 52px;
+  font-size: 38px;
   font-weight: 700;
   color: var(--ink);
   line-height: 1;
@@ -1149,7 +1149,7 @@ html, body {
 
 /* ── Category label (right column 04-07) ── */
 #s8 .s8-cat {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #6B7280;
   line-height: 1.2;
@@ -1158,7 +1158,7 @@ html, body {
 
 /* ── Callout heading ── */
 #s8 .s8-head {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--ink);
   line-height: 1.2;
@@ -1166,16 +1166,16 @@ html, body {
 
 /* ── Description ── */
 #s8 .s8-desc {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   color: #444444;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 /* ── Spacing between copy elements ── */
-#s8 .s8-fig + .s8-head  { margin-top: 6px; }
-#s8 .s8-head + .s8-desc { margin-top: 8px; }
-#s8 .s8-cat  + .s8-head { margin-top: 6px; }
+#s8 .s8-fig + .s8-head  { margin-top: 4px; }
+#s8 .s8-head + .s8-desc { margin-top: 6px; }
+#s8 .s8-cat  + .s8-head { margin-top: 4px; }
 
 </style>
 
@@ -1194,7 +1194,7 @@ html, body {
     <div class="s8-callout">
       <div class="s8-badge" aria-label="01 Waitlist">01</div>
       <div class="s8-copy">
-        <div class="s8-fig">10,000+</div>
+        <div class="s8-fig">11,700+</div>
         <div class="s8-head">Waitlist Signups</div>
         <div class="s8-desc">Direct signups from people ready to adopt Cioré. Monthly updates keep our growing waitlist engaged.</div>
       </div>
@@ -1203,7 +1203,7 @@ html, body {
     <div class="s8-callout">
       <div class="s8-badge" aria-label="02 Community">02</div>
       <div class="s8-copy">
-        <div class="s8-fig">100,000+</div>
+        <div class="s8-fig">120,000+</div>
         <div class="s8-head">Social Media Followers</div>
         <div class="s8-desc">Organic reach across social media channels with zero paid acquisition costs.</div>
       </div>
@@ -1212,9 +1212,18 @@ html, body {
     <div class="s8-callout">
       <div class="s8-badge" aria-label="03 Contributions">03</div>
       <div class="s8-copy">
-        <div class="s8-fig">$10,000+</div>
+        <div class="s8-fig">$12,000+</div>
         <div class="s8-head">Community Contributions</div>
         <div class="s8-desc">Direct donations from supporters aligned with our mission to fund progress ahead of venture capital.</div>
+      </div>
+    </div>
+
+    <div class="s8-callout">
+      <div class="s8-badge" aria-label="04 Prototype Cohort">04</div>
+      <div class="s8-copy">
+        <div class="s8-fig">55 Kits</div>
+        <div class="s8-head">Waitlist Converted to Revenue</div>
+        <div class="s8-desc">Limited cohort of waitlist members paid to receive our device prototype early, testing the shape and feel before launch. First proof of paid demand.</div>
       </div>
     </div>
 
@@ -1629,7 +1638,7 @@ html, body {
            L380.25,212.50 A22,22 0 1,0 402.25,250.60
            Z"
         fill="#2A2D2E"/>
-      <text x="290" y="278" class="pz-num" fill="#D2FF3B">04</text>
+      <text x="290" y="278" class="pz-num" fill="#D2FF3B">05</text>
       <text x="290" y="306" class="pz-lbl" fill="rgba(255,255,255,0.85)">Founder</text>
 
       <!--
@@ -1668,7 +1677,7 @@ html, body {
                  L49,276 A10,10 0 0,1 39,266
                  L39,198 A10,10 0 0,1 49,188 Z"
               fill="#FFFFFF" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
-        <text x="104" y="223" class="pz-num" fill="#1A1A1A">07</text>
+        <text x="104" y="223" class="pz-num" fill="#1A1A1A">08</text>
         <text x="104" y="249" class="pz-lbl" fill="#6B7280">Academic</text>
       </g>
 
@@ -1730,7 +1739,7 @@ html, body {
                  L268,406.9
                  A22,22 0 1,1 312,406.9 Z"
               fill="#E8FFB0" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
-        <text x="290" y="449" class="pz-num" fill="#1A1A1A">05</text>
+        <text x="290" y="449" class="pz-num" fill="#1A1A1A">06</text>
         <text x="290" y="475" class="pz-lbl" fill="#3D5A00">Contributors</text>
       </g>
 
@@ -1750,7 +1759,7 @@ html, body {
                  L49,392 A10,10 0 0,1 39,382
                  L39,314 A10,10 0 0,1 49,304 Z"
               fill="#D2FF3B"/>
-        <text x="104" y="339" class="pz-num" fill="#1A1A1A">06</text>
+        <text x="104" y="339" class="pz-num" fill="#1A1A1A">07</text>
         <text x="104" y="365" class="pz-lbl" fill="#1A1A1A">Engineering</text>
       </g>
 
@@ -1761,7 +1770,7 @@ html, body {
   <div class="s8-right">
 
     <div class="s8-callout">
-      <div class="s8-badge" aria-label="04 Founder">04</div>
+      <div class="s8-badge" aria-label="05 Founder">05</div>
       <div class="s8-copy">
         <div class="s8-cat">Founder</div>
         <div class="s8-head">Chrissy Gilmore, Founder and CEO</div>
@@ -1770,7 +1779,7 @@ html, body {
     </div>
 
     <div class="s8-callout">
-      <div class="s8-badge" aria-label="05 Contributors">05</div>
+      <div class="s8-badge" aria-label="06 Contributors">06</div>
       <div class="s8-copy">
         <div class="s8-cat">Contributors</div>
         <div class="s8-head">Senior Professional Contributors</div>
@@ -1779,7 +1788,7 @@ html, body {
     </div>
 
     <div class="s8-callout">
-      <div class="s8-badge" aria-label="06 Engineering">06</div>
+      <div class="s8-badge" aria-label="07 Engineering">07</div>
       <div class="s8-copy">
         <div class="s8-cat">Engineering</div>
         <div class="s8-head">Build Partners and Program Readiness</div>
@@ -1788,7 +1797,7 @@ html, body {
     </div>
 
     <div class="s8-callout">
-      <div class="s8-badge" aria-label="07 Academic">07</div>
+      <div class="s8-badge" aria-label="08 Academic">08</div>
       <div class="s8-copy">
         <div class="s8-cat">Academic</div>
         <div class="s8-head">University and Research Pipeline</div>
